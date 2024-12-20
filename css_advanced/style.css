@@ -1,0 +1,9 @@
+.homepage{
+    background-image: url(/media/background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.testimonial1{
+    background-color: rgba(194, 113, 255, 1);
+}
