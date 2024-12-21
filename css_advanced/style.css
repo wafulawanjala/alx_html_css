@@ -7,3 +7,16 @@
 .testimonial1{
     background-color: rgba(194, 113, 255, 1);
 }
+.tescard{
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+}
+.card{
+    margin: 20px;
+    text-align: center;
+}
+.card h3, .card p{
+margin: 5px;
+}
