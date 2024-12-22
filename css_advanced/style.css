@@ -4,8 +4,26 @@
     background-size: cover;
     background-position: center;
 }
+header{
+    size: co;
+}
 .testimonial1{
     background-color: rgba(194, 113, 255, 1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 392px;
+    font-size: 22px;
+    line-height: 33.6px;
+    letter-spacing: 0px;
+    color: white;
+}
+.testimonial1 img{
+    margin-right: 40px;
+}
+.testimonial1 h3{
+    font-weight: bold;
+    margin-top: 15px;
 }
 .tescard{
     display: flex;
@@ -43,4 +61,51 @@ a{
 }
 .pros{
     text-align: center;
+}
+.sectionfaq{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding: 100px 200px;
+}
+.sectionfaq h2{
+  font-size: 60px;
+  font-weight: 100;
+  line-height: 75.42px;
+  text-align: center;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+.faq{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    column-gap: 50px;
+    row-gap: 50px;
+}
+.fcards{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 0 100px;
+    margin-bottom: 40px;
+
+    font-family: Source Sans Pro;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #07162980;
+}
+.fcards h3{
+    font-family: Source Sans Pro;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 20.11px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #071629;
 }
