@@ -1,11 +1,21 @@
-.homepage{
+.navhead{
     background-image: url(/media/background.png);
     background-repeat: no-repeat;
-    background-size: cover;
     background-position: center;
+    background-size: auto;
+    height: 128vh;
+    padding: 0px 0px;
+    color: white;
 }
 header{
     size: co;
+}
+.homepage{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 50px 100px;
+    gap: 10px;
 }
 .testimonial1{
     background-color: rgba(194, 113, 255, 1);
@@ -35,6 +45,11 @@ header{
     margin: 20px;
     text-align: center;
 }
+.card img{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
 .card h3, .card p{
 margin: 5px;
 }
@@ -56,17 +71,54 @@ a{
     font-size: 8px;
 }
 .started{
-    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
     text-align: center;
+    padding: 80px 80px;
 }
-.pros{
+.started button{
+    background-color:#c271ff;
+    
+    height: 30px;
+    width: 150px;
+    font-size: 12px;
+    align-items: center;
+    margin: auto;
+    border-radius: 15px;
+    color: white;
+    border: 0px;
+}
+h1{
+    font-family: sans-serif;
+  font-size: 118px;
+  font-weight: 700;
+  line-height: 150.84px;
+  text-align: center;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+.smil{
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+}
+.learnpro{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+h2 span{
+    color: #c271ff;
+}
+.pros {
     text-align: center;
 }
 .sectionfaq{
     display: flex;
     flex-direction: column;
-    gap: 40px;
-    padding: 0px 200px;
+    gap: 80px;
+    padding: 80px 200px;
 }
 .sectionfaq h2{
   font-size: 60px;
@@ -193,4 +245,61 @@ a{
 }
 .phil h4{
     color: #c271ff;
+}
+.mbs{
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    padding: 80px 100px;
+    justify-content: center;
+    background-color: #071629;
+    text-align: center;
+    color: white;
+    font-weight: 100;
+}
+.mbs h2 span{
+    color: #c271ff;
+}
+.mbscard{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    
+}
+.cardshold{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 100px;
+    gap: 50px;
+}
+.mbs button{
+    background-color:#c271ff;
+    
+    height: 30px;
+    width: 150px;
+    font-size: 12px;
+    align-items: center;
+    margin: auto;
+    border-radius: 15px;
+    color: white;
+}
+.mbscard h3{
+    font-family: Source Sans Pro;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 26px;
+    text-align: center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+}
+.mbscard p{
+    font-family: Source Sans Pro;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 26px;
+    text-align: center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
 }
