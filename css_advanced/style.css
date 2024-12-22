@@ -66,7 +66,7 @@ a{
     display: flex;
     flex-direction: column;
     gap: 40px;
-    padding: 100px 200px;
+    padding: 0px 200px;
 }
 .sectionfaq h2{
   font-size: 60px;
@@ -87,7 +87,7 @@ a{
     display: flex;
     flex-direction: column;
     gap: 30px;
-    padding: 0 100px;
+    padding: 0 30px;
     margin-bottom: 40px;
 
     font-family: Source Sans Pro;
@@ -108,4 +108,89 @@ a{
     text-underline-position: from-font;
     text-decoration-skip-ink: none;
     color: #071629;
+}
+.footersec{
+    background-color: #071629;
+    text-align: center;
+}
+.footer1{
+    display: flex;
+    gap: 150px;
+    padding: 50px 200px;
+    justify-content: space-between;
+}
+.sm{
+    display: flex;
+    gap: 20px;
+    color: white;
+}
+.vidssection{
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+    justify-content: center;
+    
+    text-align: center;
+    padding: 80px 100px;
+}
+.vdcards{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 200px;
+}
+.vidcard{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    gap: 20px;
+    text-align: left;
+}
+.phil{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.phil img{
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+}
+.rating{
+    display: flex;
+    justify-content: left;
+    gap: 60px;
+    align-items: center;
+    color: #c271ff;
+}
+.stars{
+    display: flex;
+    color: #c271ff;
+}
+.vidcard h3{
+    font-weight: bold;
+}
+.vidssection h2{
+  color: #071629;
+  font-family: Source Sans Pro;
+  font-size: 32px;
+  font-weight: 100;
+  line-height: 40.22px;
+  text-align: center;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+.vidssection h2 span{
+  font-family: Source Sans Pro;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 40.22px;
+  text-align: center;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: #c271ff;
+}
+.phil h4{
+    color: #c271ff;
 }
