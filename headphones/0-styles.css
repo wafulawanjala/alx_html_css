@@ -1,0 +1,250 @@
+.cheader{
+    background-image: url(images/headphones_hero_1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+    padding: 0px 0px;
+   
+    
+}
+nav{
+    margin: 0px 100px;
+    display: flex;
+    align-items: center;
+    padding-top: 25px;
+}
+nav a{
+    color: white;
+    margin-right: 20px;
+    text-decoration: none;
+}
+.headermain{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 0px;
+    padding-bottom: 80px;
+    gap: 10px;
+    align-items: center;
+    margin-top: 0px;
+    
+}
+button{
+    width: 162px;
+    height: 44px;
+    background: #ff6565;
+    border-radius: 22px;
+    color: white;
+    align-items: center;
+    font-size: 14px;
+    font-weight: bold;
+    margin: auto;
+    border-width: 0PX;
+}
+.headermain h1{
+    font-size: 32PX;
+    font-weight: bold;
+    color: white;
+    padding-top: 205px;
+}
+.headermain h2{
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 30px;
+}
+.headermain p{
+    font-size: 16px;
+    margin-top: 30px;
+    color: white;
+    text-align: center;
+}
+p{
+    font-size: 16px;
+    margin-top: 50px;
+    color: white;
+    text-align: center;
+}
+.whatwedo{
+    background-color:white;
+    color: #071629;
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+a:hover{
+    color: #FF6565;
+}
+button:hover{
+    opacity: 0.9;
+}
+
+/* media query*/
+/* General Reset for Responsive Design */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.5;
+}
+.hamicon{
+    display: none;
+}
+
+/* Media Query for screens up to 480px */
+@media (max-width: 600px) {
+    /* Header Section */
+    nav a {
+        display: none;
+    }
+    .hamicon{
+        width: 20px;
+        height: 20px;
+        color: white;
+    }
+    nav{
+        justify-content: space-between;
+        margin-right: 10px;
+    }
+
+    .cheader nav img {
+        width: 100px; /* Adjust logo size */
+        margin-bottom: 10px;
+    }
+
+    .cheader nav a {
+        margin: 5px 0; /* Stack navigation links */
+        font-size: 14px;
+    }
+
+    /* Main Header Content */
+    .headermain h1 {
+        font-size: 18px;
+        text-align: center;
+        padding: 0 10px;
+    }
+
+    .headermain h2 {
+        font-size: 16px;
+        text-align: center;
+        padding: 0 10px;
+    }
+
+    .headermain button {
+        display: block;
+        margin: 10px auto;
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+
+    .headermain p {
+        font-size: 12px;
+        text-align: center;
+        padding: 0 10px;
+    }
+
+    /* What We Do Section */
+    .whatwedo h2 {
+        font-size: 18px;
+        text-align: center;
+    }
+
+    .whatwedo p {
+        font-size: 12px;
+        text-align: center;
+        padding: 0 10px;
+    }
+
+    /* Our Results Section */
+    .ourresultscards {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .freq {
+        flex: 1 1 45%; /* Make cards fit better */
+        text-align: center;
+    }
+
+    .freq img {
+        width: 80px;
+        margin-bottom: 5px;
+    }
+
+    .freq p {
+        font-size: 12px;
+    }
+
+    /* Dark Section */
+    .dark h2 {
+        font-size: 18px;
+        text-align: center;
+    }
+
+    .dark p {
+        font-size: 12px;
+        text-align: center;
+        padding: 0 10px;
+    }
+
+    .darkcards {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .darkcards div img {
+        width: 50px;
+    }
+
+    /* Contact Us Section */
+    .contactus h2 {
+        font-size: 18px;
+        text-align: center;
+    }
+
+    .contact-form {
+        padding: 10px;
+    }
+
+    .contact-form label {
+        font-size: 14px;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+        width: 100%;
+        font-size: 14px;
+        margin-bottom: 10px;
+        padding: 8px;
+    }
+
+    .contact-form button {
+        width: 100%;
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    /* Footer Section */
+    .futa {
+        text-align: center;
+        padding: 20px 10px;
+    }
+
+    .futa .icons img {
+        width: 20px;
+        margin: 5px;
+    }
+
+    .futa p {
+        font-size: 12px;
+    }
+}
+
+
