@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pentagon Shape</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      background-color: #f0f0f0; /* Background color for visibility */
+      font-family: Arial, sans-serif;
+    }
+
+    .pentagon {
+      position: relative;
+      width: 120px;
+      height: 120px;
+      background-color: transparent;
+    }
+
+    .pentagon::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 0 60px 60px 60px;
+      border-color: transparent transparent #f76e6e transparent;
+      transform: translateY(50%);
+    }
+
+    .pentagon::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 60px 60px 0 60px;
+      border-color: #f76e6e transparent transparent transparent;
+    }
+
+    .pentagon-content {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      color: white;
+    }
+
+    .pentagon-content .percentage {
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    .pentagon-content .text {
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+  <div class="pentagon">
+    <div class="pentagon-content">
+      <div class="percentage">+2%</div>
+      <div class="text">Lorem ipsum dolor</div>
+    </div>
+  </div>
+</body>
+</html>

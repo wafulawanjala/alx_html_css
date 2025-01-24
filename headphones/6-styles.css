@@ -174,3 +174,22 @@ a:hover{
 button:hover{
     opacity: 0.9;
 }
+/*making pentagon*/
+.mainPentagon{
+    background: #FF6565;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+.pentagon{
+    position: relative;
+    width: 54px;
+    box-sizing: content-box;
+    border-width: 50px 18px 0px;
+    
+}

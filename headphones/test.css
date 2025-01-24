@@ -1,0 +1,371 @@
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.cheader{
+    min-height: 100vh;
+    width: 100%;
+    background-image: url(images/headphones_hero_1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;   
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2% 6%;
+    width: 100%;
+}
+.alinks{
+    flex: 1;
+    text-align: right;
+}
+.alinks ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+    
+}
+.alinks ul li a{
+    width: 40px;
+    color: white;
+    text-decoration: none;
+}
+nav img{
+    width: 150px;
+}
+svg{
+    width: 50px;
+    height: 30px;
+    color: white;
+    margin-left: -50px;
+    
+    
+}
+.firstDiv{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+}
+.navicons{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-right: auto;
+
+}
+.headermain{
+    width: 90%;
+    color: white;
+    top: 50%;
+    left: 50%;
+
+    position: absolute;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    /*display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 0px;
+    padding-bottom: 50px;
+    gap: 10px;
+    align-items: center;
+    margin-top: 0px;*/
+    
+}
+button{
+    width: 162px;
+    height: 44px;
+    background: #ff6565;
+    border-radius: 22px;
+    color: white;
+    align-items: center;
+    font-size: 14px;
+    font-weight: bold;
+    margin: auto;
+    border-width: 0PX;
+}
+.headermain h1{
+    font-size: 32PX;
+    font-weight: bold;
+    color: white;
+    padding-top: 205px;
+    text-align: center;
+}
+.headermain h2{
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    margin-top: 10px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+.headermain p{
+    font-size: 16px;
+    margin: 50px 0 0px;
+    color: white;
+    text-align: center;
+    padding-left: 0%;
+    padding-right: 0%;
+}
+.headermain p span{
+    display: block;
+}
+
+/*Responsive*/
+
+@media(max-width:480px){
+    nav{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-right: 17%;
+        padding-left: 0%;
+        flex-direction: column;
+        min-height: 43%;
+    }
+    .alinks ul li{
+        list-style: none;
+        display: block;
+        padding: 8px 12px;
+        position: relative;
+
+}
+.alinks{
+    display:none;
+}
+.firstDiv{
+    display: flex;
+    align-items: start;
+    width: 100%;
+    justify-content: space-between;
+}
+svg{
+    width: 80px;
+    height: 50px;
+    color: white;
+    margin-left: 10px; 
+    position: relative;  
+    min-width: 40px;
+}
+.headermain h1{
+    font-size: 22PX;
+    font-weight: bold;
+    color: white;
+    padding-top: 205px;
+    text-align: center;
+}
+.headermain h2 span{
+    display: block;
+}
+.headermain h1 span{
+    display: block;
+}
+.headermain p span{
+    display: inline;
+}
+}
+
+@media(min-width:481px) and (max-width:768px){
+    nav{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 2% 3%;
+        width: 100%;} 
+    .firstDiv{
+        display: flex;
+        align-items: start;
+        width: 100%;
+        justify-content: space-between;
+        }
+
+    .alinks ul li{
+        list-style: none;
+        display: inline-block;
+        padding: 8px 5px;
+        position: relative;
+            
+        }
+    .headermain p{
+        font-size: 11px;
+        margin: 50px 0 0px;
+        color: white;
+        text-align: center;
+        padding-left: 0%;
+        padding-right: 0%;
+    }
+    .headermain p span{
+        display: block;
+    }
+    .headermain h1{
+        font-size: 23PX;
+        font-weight: bold;
+        color: white;
+        padding-top: 205px;
+        text-align: center;
+    }
+
+}
+
+
+
+
+
+
+p{
+    font-size: 16px;
+    margin-top: 50px;
+    color: white;
+    text-align: center;
+}
+.whatwedo{
+    background-color:white;
+    color: #071629;
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+.whatwedo p{
+    padding-left: 25%;
+    padding-right: 25%;
+}
+.ourresultscards{
+    display: flex;
+    flex-direction: row;
+    gap: 70px;
+    justify-content: center;
+    margin-top: 80px;
+}
+.freq{
+    align-items: center;
+    text-align: center;
+}
+.freq p{
+    font-size: 14px;
+    color: #071629;
+    margin-top: 10px;
+    text-align: center;
+}
+.freq h2{
+    margin-top: 20px;
+    font-size: 22px;
+    text-align: center;
+}
+.freq img{
+    width: 95px;
+    height: 65px;
+}
+.dark{
+    background-image: url(images/background.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+    padding: 0px 0px;
+    color: white;
+    padding-top: 60px;
+    font-size: 16px;
+    font-weight: 20;
+    margin-top: 50px;
+    padding-bottom: 30px;
+
+}
+.darkcards{
+    display: flex;
+    flex-direction: row;
+    gap: 70px;
+    justify-content: center;
+    margin-top: 30px;
+}
+.dark p{
+    padding-left: 25%;
+    padding-right: 25%;
+}
+.contactus{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: black;
+    gap: 20px;
+    padding-top: 70px;
+    align-items: center;
+}
+.contact-form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    
+    width: 100%;
+    max-width: 400px;
+    border: none;
+}
+h2{
+    color: #071629;
+    font-weight: bold;
+    font-size: 26px;
+    text-align: center;
+}
+h1{
+    text-align: center
+}
+.contact-form label {
+    display: block;
+    margin-bottom: 0px;
+    font-weight: bold;
+}
+.contact-form input, .contact-form textarea{
+    width: 100%;
+    padding: 0px;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #071629;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+}
+.contact-form button{
+    width: 162px;
+    height: 44px;
+}
+.futaicon{
+    margin-right: auto;
+}
+.icons img{
+    margin-left: auto;
+    justify-content: space-between;
+}
+.futa{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    background-color: #071629;
+    padding: 5% 5%;
+    margin-top: 70px;
+    align-items: center;
+    justify-content: center;
+    
+}
+.bigdiv{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    
+}
+.futa p{
+    font-size: 12px;
+}
+.futaicon img{
+    margin-right: auto;
+}
+a:hover{
+    color: #FF6565;
+}
+button:hover{
+    opacity: 0.9;
+}
+.icons{
+    margin-left: auto;
+}
