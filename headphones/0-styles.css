@@ -1,32 +1,83 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
 .cheader{
+    min-height: 100vh;
+    width: 100%;
     background-image: url(images/headphones_hero_1.jpg);
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 100% 100%;
-    padding: 0px 0px;
-   
-    
+    background-size: cover;
+    position: relative;   
 }
 nav{
-    margin: 0px 100px;
     display: flex;
     align-items: center;
-    padding-top: 25px;
+    justify-content: space-between;
+    padding: 2% 6%;
+    width: 100%;
 }
-nav a{
+.alinks{
+    flex: 1;
+    text-align: right;
+}
+.alinks ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+    
+}
+.alinks ul li a{
+    width: 40px;
     color: white;
-    margin-right: 20px;
     text-decoration: none;
 }
-.headermain{
+ul li a:hover{
+    color: #cf2a2a;
+}
+nav img{
+    width: 150px;
+}
+svg{
+    width: 50px;
+    height: 30px;
+    color: white;
+    margin-left: -50px;
+    
+    
+}
+.firstDiv{
     display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+}
+.navicons{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-right: auto;
+
+}
+.headermain{
+    width: 90%;
+    color: white;
+    top: 50%;
+    left: 50%;
+
+    position: absolute;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    /*display: flex;
     flex-direction: column;
     justify-content: center;
     padding-top: 0px;
-    padding-bottom: 80px;
+    padding-bottom: 50px;
     gap: 10px;
     align-items: center;
-    margin-top: 0px;
+    margin-top: 0px;*/
     
 }
 button{
@@ -46,205 +97,126 @@ button{
     font-weight: bold;
     color: white;
     padding-top: 205px;
+    text-align: center;
 }
 .headermain h2{
     font-size: 16px;
     font-weight: bold;
     color: white;
-    margin-bottom: 30px;
+    margin-top: 10px;
+    margin-bottom: 50px;
+    text-align: center;
 }
 .headermain p{
     font-size: 16px;
-    margin-top: 30px;
+    margin: 50px 0 0px;
     color: white;
     text-align: center;
+    padding-left: 0%;
+    padding-right: 0%;
 }
-p{
-    font-size: 16px;
-    margin-top: 50px;
-    color: white;
-    text-align: center;
-}
-.whatwedo{
-    background-color:white;
-    color: #071629;
-    margin-top: 100px;
-    margin-bottom: 50px;
-}
-a:hover{
-    color: #FF6565;
+.headermain p span{
+    display: block;
 }
 button:hover{
     opacity: 0.9;
 }
 
-/* media query*/
-/* General Reset for Responsive Design */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+/*Responsive*/
 
-body {
-    font-family: Arial, sans-serif;
-    line-height: 1.5;
-}
-.hamicon{
-    display: none;
-}
-
-/* Media Query for screens up to 480px */
-@media (max-width: 600px) {
-    /* Header Section */
-    nav a {
-        display: none;
-    }
-    .hamicon{
-        width: 20px;
-        height: 20px;
-        color: white;
-    }
+@media(max-width:480px){
     nav{
+        display: flex;
+        align-items: center;
         justify-content: space-between;
-        margin-right: 10px;
+        padding-right: 17%;
+        padding-left: 0%;
+        flex-direction: column;
+        min-height: 43%;
     }
-
-    .cheader nav img {
-        width: 100px; /* Adjust logo size */
-        margin-bottom: 10px;
-    }
-
-    .cheader nav a {
-        margin: 5px 0; /* Stack navigation links */
-        font-size: 14px;
-    }
-
-    /* Main Header Content */
-    .headermain h1 {
-        font-size: 18px;
-        text-align: center;
-        padding: 0 10px;
-    }
-
-    .headermain h2 {
-        font-size: 16px;
-        text-align: center;
-        padding: 0 10px;
-    }
-
-    .headermain button {
+    .alinks ul li{
+        list-style: none;
         display: block;
-        margin: 10px auto;
-        padding: 10px 20px;
-        font-size: 14px;
-    }
+        padding: 8px 12px;
+        position: relative;
 
-    .headermain p {
-        font-size: 12px;
-        text-align: center;
-        padding: 0 10px;
-    }
-
-    /* What We Do Section */
-    .whatwedo h2 {
-        font-size: 18px;
-        text-align: center;
-    }
-
-    .whatwedo p {
-        font-size: 12px;
-        text-align: center;
-        padding: 0 10px;
-    }
-
-    /* Our Results Section */
-    .ourresultscards {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 10px;
-    }
-
-    .freq {
-        flex: 1 1 45%; /* Make cards fit better */
-        text-align: center;
-    }
-
-    .freq img {
-        width: 80px;
-        margin-bottom: 5px;
-    }
-
-    .freq p {
-        font-size: 12px;
-    }
-
-    /* Dark Section */
-    .dark h2 {
-        font-size: 18px;
-        text-align: center;
-    }
-
-    .dark p {
-        font-size: 12px;
-        text-align: center;
-        padding: 0 10px;
-    }
-
-    .darkcards {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 10px;
-    }
-
-    .darkcards div img {
-        width: 50px;
-    }
-
-    /* Contact Us Section */
-    .contactus h2 {
-        font-size: 18px;
-        text-align: center;
-    }
-
-    .contact-form {
-        padding: 10px;
-    }
-
-    .contact-form label {
-        font-size: 14px;
-    }
-
-    .contact-form input,
-    .contact-form textarea {
-        width: 100%;
-        font-size: 14px;
-        margin-bottom: 10px;
-        padding: 8px;
-    }
-
-    .contact-form button {
-        width: 100%;
-        padding: 10px;
-        font-size: 14px;
-    }
-
-    /* Footer Section */
-    .futa {
-        text-align: center;
-        padding: 20px 10px;
-    }
-
-    .futa .icons img {
-        width: 20px;
-        margin: 5px;
-    }
-
-    .futa p {
-        font-size: 12px;
-    }
+}
+.alinks{
+    display:none;
+}
+.firstDiv{
+    display: flex;
+    align-items: start;
+    width: 100%;
+    justify-content: space-between;
+}
+svg{
+    width: 80px;
+    height: 50px;
+    color: white;
+    margin-left: 10px; 
+    position: relative;  
+    min-width: 40px;
+}
+.headermain h1{
+    font-size: 22PX;
+    font-weight: bold;
+    color: white;
+    padding-top: 205px;
+    text-align: center;
+}
+.headermain h2 span{
+    display: block;
+}
+.headermain h1 span{
+    display: block;
+}
+.headermain p span{
+    display: inline;
+}
+.headermain p{
+    font-size: 13px;
+}
 }
 
+@media(min-width:481px) and (max-width:768px){
+    nav{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 2% 3%;
+        width: 100%;} 
+    .firstDiv{
+        display: flex;
+        align-items: start;
+        width: 100%;
+        justify-content: space-between;
+        }
 
+    .alinks ul li{
+        list-style: none;
+        display: inline-block;
+        padding: 8px 5px;
+        position: relative;
+            
+        }
+    .headermain p{
+        font-size: 11px;
+        margin: 50px 0 0px;
+        color: white;
+        text-align: center;
+        padding-left: 0%;
+        padding-right: 0%;
+    }
+    .headermain p span{
+        display: block;
+    }
+    .headermain h1{
+        font-size: 23PX;
+        font-weight: bold;
+        color: white;
+        padding-top: 205px;
+        text-align: center;
+    }
+
+}

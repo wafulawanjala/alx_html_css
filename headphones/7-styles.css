@@ -462,3 +462,80 @@ h1{
         padding: 10% 10%;
     }
 }
+/*Footer Section*/
+
+.futaicon{
+    margin-right: auto;
+}
+.icons img{
+    margin-left: auto;
+    justify-content: space-between;
+}
+.futa{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    background-color: #071629;
+    padding: 5% 5%;
+    margin-top: 70px;
+    align-items: center;
+    justify-content: center;
+    
+}
+.bigdiv{
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    width: 100%;
+    
+}
+.bigdiv ul{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+    display: flex;
+}
+.bigdiv ul li{
+    padding: 2%;
+    
+}
+.bigdiv ul li img{
+    width: 20px;
+}
+.bigdiv img{
+    width: 150px;
+}
+.futa p{
+    font-size: 12px;
+}
+.futaicon img{
+    margin-right: auto;
+}
+
+button:hover{
+    opacity: 0.9;
+}
+
+
+/*Make Footer Section Responsive*/
+
+@media(max-width:480Px){
+    .bigdiv{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        
+    }
+}
+
+.darkcards img:hover{
+        transform: scale(1.1);
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+.freq:hover{
+    transform: scale(1.1);
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}

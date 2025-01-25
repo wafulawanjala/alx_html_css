@@ -1,32 +1,83 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
 .cheader{
+    min-height: 100vh;
+    width: 100%;
     background-image: url(images/headphones_hero_1.jpg);
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 100% 100%;
-    padding: 0px 0px;
-   
-    
+    background-size: cover;
+    position: relative;   
 }
 nav{
-    margin: 0px 100px;
     display: flex;
     align-items: center;
-    padding-top: 25px;
+    justify-content: space-between;
+    padding: 2% 6%;
+    width: 100%;
 }
-nav a{
+.alinks{
+    flex: 1;
+    text-align: right;
+}
+.alinks ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+    
+}
+.alinks ul li a{
+    width: 40px;
     color: white;
-    margin-right: 20px;
     text-decoration: none;
 }
-.headermain{
+ul li a:hover{
+    color: #cf2a2a;
+}
+nav img{
+    width: 150px;
+}
+svg{
+    width: 50px;
+    height: 30px;
+    color: white;
+    margin-left: -50px;
+    
+    
+}
+.firstDiv{
     display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+}
+.navicons{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-right: auto;
+
+}
+.headermain{
+    width: 90%;
+    color: white;
+    top: 50%;
+    left: 50%;
+
+    position: absolute;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    /*display: flex;
     flex-direction: column;
     justify-content: center;
     padding-top: 0px;
     padding-bottom: 50px;
     gap: 10px;
     align-items: center;
-    margin-top: 0px;
+    margin-top: 0px;*/
     
 }
 button{
@@ -46,23 +97,135 @@ button{
     font-weight: bold;
     color: white;
     padding-top: 205px;
+    text-align: center;
 }
 .headermain h2{
     font-size: 16px;
     font-weight: bold;
     color: white;
-    margin-bottom: 30px;
+    margin-top: 10px;
+    margin-bottom: 50px;
+    text-align: center;
 }
 .headermain p{
     font-size: 16px;
-    margin-top: 70px;
+    margin: 50px 0 0px;
     color: white;
     text-align: center;
+    padding-left: 0%;
+    padding-right: 0%;
 }
-p{
-    font-size: 16px;
-    margin-top: 50px;
+.headermain p span{
+    display: block;
+}
+button:hover{
+    opacity: 0.9;
+}
+
+/*Responsive*/
+
+@media(max-width:480px){
+    nav{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-right: 17%;
+        padding-left: 0%;
+        flex-direction: column;
+        min-height: 43%;
+    }
+    .alinks ul li{
+        list-style: none;
+        display: block;
+        padding: 8px 12px;
+        position: relative;
+
+}
+.alinks{
+    display:none;
+}
+.firstDiv{
+    display: flex;
+    align-items: start;
+    width: 100%;
+    justify-content: space-between;
+}
+svg{
+    width: 80px;
+    height: 50px;
     color: white;
+    margin-left: 10px; 
+    position: relative;  
+    min-width: 40px;
+}
+.headermain h1{
+    font-size: 22PX;
+    font-weight: bold;
+    color: white;
+    padding-top: 205px;
+    text-align: center;
+}
+.headermain h2 span{
+    display: block;
+}
+.headermain h1 span{
+    display: block;
+}
+.headermain p span{
+    display: inline;
+}
+.headermain p{
+    font-size: 13px;
+}
+}
+
+@media(min-width:481px) and (max-width:768px){
+    nav{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 2% 3%;
+        width: 100%;} 
+    .firstDiv{
+        display: flex;
+        align-items: start;
+        width: 100%;
+        justify-content: space-between;
+        }
+
+    .alinks ul li{
+        list-style: none;
+        display: inline-block;
+        padding: 8px 5px;
+        position: relative;
+            
+        }
+    .headermain p{
+        font-size: 11px;
+        margin: 50px 0 0px;
+        color: white;
+        text-align: center;
+        padding-left: 0%;
+        padding-right: 0%;
+    }
+    .headermain p span{
+        display: block;
+    }
+    .headermain h1{
+        font-size: 23PX;
+        font-weight: bold;
+        color: white;
+        padding-top: 205px;
+        text-align: center;
+    }
+
+}
+
+
+h2{
+    color: #071629;
+    font-weight: bold;
+    font-size: 26px;
     text-align: center;
 }
 .whatwedo{
@@ -70,6 +233,15 @@ p{
     color: #071629;
     margin-top: 100px;
     margin-bottom: 50px;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+.whatwedo p{
+    padding-left: 0%;
+    padding-right: 0%;
+}
+.whatwedo p span{
+    display: block;
 }
 .ourresultscards{
     display: flex;
@@ -83,15 +255,89 @@ p{
     text-align: center;
 }
 .freq p{
-    font-size: 14px;
+    font-size: 10px;
     color: #071629;
+    margin-top: 10px;
+    text-align: center;
 }
+.freq h2{
+    margin-top: 20px;
+    font-size: 22px;
+    text-align: center;
+}
+.freq img{
+    width: 95px;
+    height: 65px;
+}
+.ourresults{
+    padding-left: 5%;
+    padding-right: 5%;
+}
+/*Make section responsive*/
+
+@media(max-width:480px){
+    .whatwedo p{
+        padding-left: 0%;
+        padding-right: 0%;
+        font-size: 13px;
+    }
+    .whatwedo p span{
+        display: inline;
+    }
+    .ourresultscards{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .freq{
+        width: 60%;
+        height: 50%;
+        gap: 0px;
+        align-items: center;
+    }
+    .freq p{
+        font-size: 14px;
+    }
+
+
+
+
+
+
+
+
+}
+
+@media(min-width:481px) and (max-width:768px){
+    .whatwedo p{
+        padding-left: 0%;
+        padding-right: 0%;
+        font-size: 11px;
+    }
+    .whatwedo p span{
+        display: block;
+    }
+
+    .ourresultscards{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .freq{
+        width: 40%;
+        height: 30%;
+        gap: 0px;
+        align-items: center;
+    }
+
+}
+
+/* Our Results Section*/
+
 .dark{
     background-image: url(images/background.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: 100% 100%;
-    padding: 0px 0px;
+    padding: 5% 5%;
     color: white;
     padding-top: 60px;
     font-size: 16px;
@@ -103,93 +349,74 @@ p{
 .darkcards{
     display: flex;
     flex-direction: row;
-    gap: 70px;
+    gap: 30px;
     justify-content: center;
     margin-top: 30px;
 }
-.contactus{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    color: black;
-    gap: 20px;
-    padding-top: 70px;
-    align-items: center;
+.darkcards img{
+    width: 150px;
+    height: 150px;
 }
-.contact-form{
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    
-    width: 100%;
-    max-width: 400px;
-    border: none;
+.dark p{
+    padding-left: 0%;
+    padding-right: 0%;
 }
-h2{
-    color: #071629;
-    font-weight: bold;
-    font-size: 26px;
-    text-align: center;
-}
-.contact-form label {
+.dark p span{
     display: block;
-    margin-bottom: 0px;
-    font-weight: bold;
 }
-.contact-form input, .contact-form textarea{
-    width: 100%;
-    padding: 0px;
-    margin-bottom: 15px;
-    border-bottom: 2px solid #071629;
-    border-top: 0px;
-    border-left: 0px;
-    border-right: 0px;
-}
-.contact-form button{
-    width: 162px;
-    height: 44px;
-}
-.icons{
-    margin-left: auto;
-}
-.futa{
+.pentagon {
+    width: 150px;
+    height: 150px;
+    background-color: #FF6565;
+    clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
+    margin: 0px 5px;
     display: flex;
     flex-direction: column;
-    gap: 50px;
-    background-color: #071629;
-    padding: 50px 100px;
-    margin-top: 70px;
-    
-}
-.bigdiv{
-    display: flex;
-    flex-direction: row;
-}
-.futa p{
-    font-size: 12px;
-}
-a:hover{
-    color: #FF6565;
-}
-button:hover{
-    opacity: 0.9;
-}
-/*making pentagon*/
-.mainPentagon{
-    background: #FF6565;
-    display: flex;
+    gap: 0px;
     justify-content: center;
     align-items: center;
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-}
-.pentagon{
-    position: relative;
-    width: 54px;
-    box-sizing: content-box;
-    border-width: 50px 18px 0px;
+    color: white;
+    font-size: 13px;
+    font-weight: bold;
+    text-align: center;
+  }
+  .pentagon p{
+    margin: 0px;
+  }
+
+/*Make Section Responsive*/
+
+@media(max-width:480px){
+    .darkcards{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .pentagon{
+        width: 50%;
     
+    }
+    .dark h2 span{
+        display: block;
+    }
+    .dark p{
+        font-size: 11px;
+    }
+    .dark p span{
+        display: inline;
+    }
+
+}
+@media(min-width:481px) and (max-width:768px){
+    .darkcards{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .pentagon{
+        width: 40%;
+    }
+    
+    
+    .dark p{
+        font-size: 10px;
+    }
 }

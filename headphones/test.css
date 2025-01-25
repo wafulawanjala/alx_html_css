@@ -35,6 +35,9 @@ nav{
     color: white;
     text-decoration: none;
 }
+ul li a:hover{
+    color: #cf2a2a;
+}
 nav img{
     width: 150px;
 }
@@ -169,6 +172,9 @@ svg{
 .headermain p span{
     display: inline;
 }
+.headermain p{
+    font-size: 13px;
+}
 }
 
 @media(min-width:481px) and (max-width:768px){
@@ -216,7 +222,7 @@ svg{
 
 
 
-
+/*What we do Section*/
 
 p{
     font-size: 16px;
@@ -229,10 +235,15 @@ p{
     color: #071629;
     margin-top: 100px;
     margin-bottom: 50px;
+    padding-left: 5%;
+    padding-right: 5%;
 }
 .whatwedo p{
-    padding-left: 25%;
-    padding-right: 25%;
+    padding-left: 0%;
+    padding-right: 0%;
+}
+.whatwedo p span{
+    display: block;
 }
 .ourresultscards{
     display: flex;
@@ -246,7 +257,7 @@ p{
     text-align: center;
 }
 .freq p{
-    font-size: 14px;
+    font-size: 10px;
     color: #071629;
     margin-top: 10px;
     text-align: center;
@@ -260,12 +271,77 @@ p{
     width: 95px;
     height: 65px;
 }
+.ourresults{
+    padding-left: 5%;
+    padding-right: 5%;
+}
+/*Make section responsive*/
+
+@media(max-width:480px){
+    .whatwedo p{
+        padding-left: 0%;
+        padding-right: 0%;
+        font-size: 13px;
+    }
+    .whatwedo p span{
+        display: inline;
+    }
+    .ourresultscards{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .freq{
+        width: 60%;
+        height: 50%;
+        gap: 0px;
+        align-items: center;
+    }
+    .freq p{
+        font-size: 14px;
+    }
+
+
+
+
+
+
+
+
+}
+
+@media(min-width:481px) and (max-width:768px){
+    .whatwedo p{
+        padding-left: 0%;
+        padding-right: 0%;
+        font-size: 11px;
+    }
+    .whatwedo p span{
+        display: block;
+    }
+
+    .ourresultscards{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .freq{
+        width: 40%;
+        height: 30%;
+        gap: 0px;
+        align-items: center;
+    }
+    
+
+
+}
+
+/* Our Results Section*/
+
 .dark{
     background-image: url(images/background.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: 100% 100%;
-    padding: 0px 0px;
+    padding: 5% 5%;
     color: white;
     padding-top: 60px;
     font-size: 16px;
@@ -277,14 +353,62 @@ p{
 .darkcards{
     display: flex;
     flex-direction: row;
-    gap: 70px;
+    gap: 30px;
     justify-content: center;
     margin-top: 30px;
 }
-.dark p{
-    padding-left: 25%;
-    padding-right: 25%;
+.darkcards img{
+    width: 150px;
+    height: 150px;
 }
+.dark p{
+    padding-left: 0%;
+    padding-right: 0%;
+}
+.dark p span{
+    display: block;
+}
+
+/*Make Section Responsive*/
+
+@media(max-width:480px){
+    .darkcards{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .darkcards img{
+        width: 60%;
+        height: 50%;
+    }
+    .dark h2 span{
+        display: block;
+    }
+    .dark p{
+        font-size: 11px;
+    }
+    .dark p span{
+        display: inline;
+    }
+
+}
+@media(min-width:481px) and (max-width:768px){
+    .darkcards{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .darkcards img{
+        width: 40%;
+        height: 30%;
+    }
+    
+    
+    .dark p{
+        font-size: 10px;
+    }
+}
+
+/* Contact Us Section*/
+
 .contactus{
     display: flex;
     flex-direction: column;
@@ -330,6 +454,17 @@ h1{
     width: 162px;
     height: 44px;
 }
+
+/*make Section Responsive*/
+
+@media(max-width:480px){
+    .contactus{
+        padding: 10% 10%;
+    }
+}
+
+/*Footer Section*/
+
 .futaicon{
     margin-right: auto;
 }
@@ -350,9 +485,27 @@ h1{
 }
 .bigdiv{
     display: flex;
-    align-items: center;
-    justify-content: space-evenly;
+    align-items: start;
+    justify-content: space-between;
+    width: 100%;
     
+}
+.bigdiv ul{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+    display: flex;
+}
+.bigdiv ul li{
+    padding: 2%;
+    
+}
+.bigdiv ul li img{
+    width: 20px;
+}
+.bigdiv img{
+    width: 150px;
 }
 .futa p{
     font-size: 12px;
@@ -360,12 +513,20 @@ h1{
 .futaicon img{
     margin-right: auto;
 }
-a:hover{
-    color: #FF6565;
-}
+
 button:hover{
     opacity: 0.9;
 }
-.icons{
-    margin-left: auto;
+
+/*Make Footer Section Responsive*/
+
+@media(max-width:480Px){
+    .bigdiv{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        
+    }
 }
